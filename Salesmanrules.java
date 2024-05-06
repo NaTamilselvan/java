@@ -8,6 +8,8 @@ public interface Salesmanrules{
 
 //you can provide a static member to define a body interface 
 
+//interface is groub of releted data 
+
 int salary=10000, leave=4;
 
 public void keepTime();
