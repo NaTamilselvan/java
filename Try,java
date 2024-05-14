@@ -1,0 +1,65 @@
+class Atm{
+
+//declare a filed or datamember or instance variable 
+
+private int pin=1234;
+
+private p;
+
+void getPin(){
+
+ Scanner scan=new Scanner(System.in);
+
+   p=scan.nextInt();
+
+}
+
+void validate()
+{
+
+if(pin==p){
+
+System.out.println("sucessfully entered");
+
+}
+
+else{
+System.out.println("you enter pin is wrong try again");
+
+}
+
+}
+}
+
+class Bank{
+
+    void initiate (){
+
+     Atm a=new Atm();
+     a.getPin();
+     a.validate();
+
+
+}
+
+}
+
+
+public class Try{
+
+
+public static void main(String[] args){
+
+
+      Bank b=new Bank();
+
+     B.initiate();
+
+
+}
+
+
+}
+
+
+
