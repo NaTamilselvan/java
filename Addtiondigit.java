@@ -2,22 +2,29 @@ import java.util.Scanner;
 public class Addtiondigit{
 
 
-public static int addd(int i){
 
-int add=0;
+public static void addd(int num ){
 
-while(i>0){
+int total=0;
 
+while (num>9){
 
-add+=i%10;
+while(num>0){
 
-i=i/10;
+int rem=0;
+ 
+rem=num%10;
+
+total=total+rem;
+
+num=num/10;
 
 }
+System.out.println(total);
+}
 
+System.out.println(total);
 
-
-return ;
 }
 
 public static void main(String[] args){
@@ -26,11 +33,10 @@ public static void main(String[] args){
 
 System.out.println("Enter the number");
 int a=scan.nextInt();
+   
+addd(a);
 
-int d=addd(a);
-
-System.out.println(d);
-
+}
 
 
 }
@@ -38,4 +44,4 @@ System.out.println(d);
 
 
 
-}
+
