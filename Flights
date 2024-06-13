@@ -1,0 +1,95 @@
+package mysimpleprogram;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class Flights {
+
+	public static void main(String[] args) {
+		
+
+		
+		Map<String,String> flight=new HashMap<>();
+
+
+		flight.put("8:00","India");
+
+		flight.put("9:00","Afcaniston");
+
+		flight.put("10:00","Baden");
+
+		flight.put("11:00","cameron");
+
+		flight.put("12:00","Dominical");
+
+		flight.put("13:00","Estioniya");
+
+		flight.put("14:00","fiji");
+
+		flight.put("15:00","greece");
+
+
+		System.out.println(flight);
+
+
+		System.out.println("head map");
+		
+	
+
+Map<String,String>    flight1=flight.headMap("11:00");
+
+
+		                             Set<Entry<String,String>  >entrys=flight1.entrySet();
+		                                                 for(Entry<String,String>entry:entrys){
+		                                                    	  System.out.println(entry);
+
+		                                                           }
+		                                                 
+		                                                 
+		                                                 
+		                                                 
+		                                                 
+		                                                 Map<String,String>    flight2=flight.tailMap("13:00");
+
+
+		                                                 Set<Entry<String,String>  >entrys2=flight2.entrySet();
+		                                                                     for(Entry<String,String>entry1:entrys2){
+		                                                                        	  System.out.println(entry1);
+
+		                                                                               }
+		                                                                     
+		                                                                     
+		                                                                     
+		                                                                     Map<String,String>    flight3=flight.subMap("11:00",true,"14:00",true);
+
+
+		                                                                     Set<Entry<String,String>  >entrys3=flight3.entrySet();
+		                                                                                         for(Entry<String,String>entry:entrys3){
+		                                                                                            	  System.out.println(entry);
+
+		                                                                                                   }
+		                                                 
+		                                                 
+		                                                 
+		                                                 
+		}
+	
+	
+	
+
+	
+
+}
+	
+	
+	
+
+
+
+		
+		
+	
+
+
