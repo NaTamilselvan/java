@@ -1,0 +1,35 @@
+package com.tamil.package3;
+
+import java.util.TreeMap;
+
+public class Mapintroduceddd {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		 TreeMap<String,String> t=new TreeMap();
+
+		 
+		 t.put("11:00", "India");
+		 
+		 t.put("12:00", "Afcansiton");
+		 
+		 t.put("13:00", "beligum");
+		 
+		 t.put("14:00", "Indoniya");
+		 
+		 t.put("15:00", "kombodiya");
+		 
+		 
+		 System.out.println(t);
+		 
+		 
+		 
+		 
+		
+
+	}
+
+}
