@@ -1,0 +1,40 @@
+package StringTap;
+
+import java.util.Scanner;
+
+public class Uppercase {
+
+	
+public static String convertUppercase(String lower) {
+		
+		String upper="";
+		
+		
+		for(int i=0;i<lower.length();i++ ) {
+		   	
+			upper+= (char)(lower.charAt(i)-32);
+		}
+		
+		
+		return upper;
+	}
+	
+	public static void main(String[] args) {
+		
+	//System.out.println("Enter your text");
+	
+	 Scanner scan=new Scanner(System.in);
+	 
+	 
+	 System.out.println("Enter your String");
+	 
+	 String s=scan.nextLine();
+	 
+	 System.out.println(convertUppercase(s));
+		
+		
+		
+
+	}
+
+}
