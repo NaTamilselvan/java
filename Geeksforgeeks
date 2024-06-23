@@ -1,0 +1,101 @@
+package Hackranksolutions;
+
+public class Geeksforgeeks {
+
+	
+	static void peakelement(int[] a) {
+		
+		for(int i=1;i<a.length-1;i++) {
+			
+			if(a[i-1]<a[i] && a[i]>a[i+1]) {
+				System.out.println(a[i]);
+			}
+			
+		}
+	}
+	
+	
+	static int  peakelemnetBinary(int [] a,int n) {
+		
+		
+		
+		return peakelementBinary2(a,0,n-1,n);
+		
+		
+		//return findPeakUtil(a,0,n-1,n);
+	}
+	
+	private static int peakelementBinary2(int[] a, int low, int high, int n) {
+
+		int mid=low+(high-low)/2;
+		
+		if((mid==0 || a[mid-1] <=a[mid] ) && (  mid== n-1 || a[mid+1]  <= a[mid]))
+			
+   
+		return mid;
+		
+		
+		else if(mid > 0  && a[mid-1]>mid) {
+			 return peakelementBinary2(a, low, mid-1, n);
+		}
+			else {
+				 return peakelementBinary2(a, mid+1, high, n);
+			}
+		}
+		
+	
+	
+	static int findPeakUtil(
+	        int arr[], int low, int high, int n)
+	    {
+	        // Find index of middle element
+	        // low + (high - low) / 2
+	        int mid = low + (high - low) / 2;
+
+	        // Compare middle element with its
+	        // neighbours (if neighbours exist)
+	        if ((mid == 0 || arr[mid - 1] <= arr[mid])
+	            && (mid == n - 1 || arr[mid + 1] <= arr[mid]))
+	            return mid;
+
+	        // If middle element is not peak
+	        // and its left neighbor is
+	        // greater than it, then left half
+	        // must have a peak element
+	        else if (mid > 0 && arr[mid - 1] > arr[mid])
+	            return findPeakUtil(arr, low, (mid - 1), n);
+
+	        // If middle element is not peak
+	        // and its right neighbor
+	        // is greater than it, then right
+	        // half must have a peak
+	        // element
+	        else
+	            return findPeakUtil(
+	                arr, (mid + 1), high, n);
+	    }
+
+	    // A wrapper over recursive function
+	    // findPeakUtil()
+	    static int findPeak(int arr[], int n)
+	    {
+	        return findPeakUtil(arr, 0, n - 1, n);
+	    }
+
+	
+
+
+	public static void main(String[] args) {
+		
+          //   peakelement( new int[]{10,20,30,40,50,60,45,50,46,12} );
+		
+		//peakelement( new int[] {10, 20, 15, 2, 23, 90, 67});
+
+		int a[]= {102,2,3,4,5,6,7,9};		
+		//System.out.println( peakelemnetBinary2(a,0,a.length-1,a.length);
+	
+		System.out.println(peakelemnetBinary(a,a.length));
+	
+	}
+
+}
