@@ -1,0 +1,26 @@
+package Daily5class;
+
+public class Home {
+
+	    int window ;
+	    
+	    int rooms;
+	    
+	    String[] d=new String[5];
+	    
+	    String type;
+	    
+	    
+	
+	    
+	    
+	public static void main(String[] args) {
+		//one class to another class is uni directional.
+		
+		
+		
+		
+
+	}
+
+}
