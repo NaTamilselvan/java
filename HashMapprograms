@@ -1,0 +1,67 @@
+package Recall;
+
+import java.util.HashMap;
+
+public class HashMapprograms {
+
+	public static void main(String[] args){
+		
+		
+		HashMap <Integer,Integer> h=new HashMap<Integer,Integer>();
+
+		h.put(10, 1);
+		h.put(11, 2);
+		h.put(13, 3);
+		h.put(10,2);
+		h.put(11, 3);
+		h.put(13, 4);
+		h.put(10, 0);
+		
+		System.out.println(h);
+		
+		
+		int[] a= {1,2,2,2,2,4,5};
+		
+		int length;
+		
+		int[] b=new int[10];
+		
+		int[] c=new int[7];
+		
+		
+		System.out.println(c.length/2);
+		
+		System.out.println(c.length/2+1);
+		
+		System.out.println((c.length/2));
+		
+		int majority=a[0],count=1;
+		
+
+		
+		for(int i=1;i<a.length;i++){
+
+			
+			if(count==0) {
+				majority=a[i+1];
+				count++;
+			
+			
+			}
+			else if(majority==a[i])
+				count++;
+			else 
+				count--;
+
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+}
