@@ -1,0 +1,34 @@
+public class SnumN {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		char ch='a';
+		
+		int a=ch;
+		
+	    //This program for print sum of first n square values 
+		
+		System.out.println("Enter the n value");
+		
+		Scanner scan=new Scanner(System.in);
+		
+		int n=scan.nextInt();
+		
+		int sum=0;
+		
+		
+		for(int i=1;i<=n;i++) {
+			
+			sum=sum+(i*i);
+		}
+		
+		System.out.println(sum);
+		
+		
+
+	}
+
+}
