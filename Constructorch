@@ -1,0 +1,41 @@
+package Super;
+
+class AA{
+	/*AA(){
+		System.out.println("COnstructor of A");
+		
+	}*/
+	
+	
+	AA(String name){
+		System.out.println("COnstructor of A");
+		
+	}
+	
+	
+}
+class BB extends AA {
+
+	/*BB(){
+		System.out.println("Hi i am child class B");
+	}
+	BB(String name ){
+		System.out.println("Hi i am BB parametrised constructor");
+	}
+	
+	BB(String name,int age ){
+		System.out.println("Hi i am BB parametrised constructor");
+	}*/
+}
+
+public class Constructorch {
+	public static void main(String[] args) {
+            
+		BB bb=new BB();
+		
+     //		BB b=new BB("tamil");
+       //    	BB b1=new BB("tamil",12);
+	     
+}
+
+}
