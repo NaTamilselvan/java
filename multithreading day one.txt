@@ -1,0 +1,41 @@
+yester day i was learned   multithreading concept is 
+
+
+what is multithread ?
+
+
+multithread means a program is concurrent execution .or parrel execution
+
+what is concurrent ?
+
+doing many things at a same time?
+
+A program is way or path to handled during program execution its a thread.
+
+usevally a program contains atleast one thread that is nothing but main thread
+
+main thread is automattically invoked a main method called or program execution.
+
+a program contains multiple thread .
+
+each thread has own priorty 
+
+that is 0-10
+
+high priorty threads execute irst .secound prority  secoundrey 
+
+
+multithread is used divided a task to high perormance .
+
+its used network conectivity ,io opertioans 
+
+
+yesterday learned yield 
+
+yield means to give a change of other thread .
+
+
+join means waiting for other thread execution completed comes .
+
+
+exam hall ofiecer waitjhing for questionsaaer  
