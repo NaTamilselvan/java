@@ -1,0 +1,38 @@
+package pack1;
+
+public class A{
+
+/* This program we learn about protected and protected member to access to use child class ref */
+
+
+
+
+//public method access any where 
+
+   public void m1(){
+
+		System.out.println("A class method");
+		System.out.println("A class method");}
+
+
+//This method  for default package level access
+
+ void m2(){
+
+         
+		System.out.println("A class default  method");
+          }
+
+// This method protected 
+
+protected void m3(){
+
+    
+		System.out.println("A class method");
+
+
+
+}
+
+
+}
