@@ -1,0 +1,16 @@
+spring.application.name=myfirstproject
+
+server.port=8091
+
+logging.level.org.springframework.web:DEBUG
+logging.level.org.hibernate:ERROR
+
+
+spring.datasource.url=jdbc.postgressql://localhost:5432/learning
+spring.datasource.username=postgres
+spring.datasource.password=coder
+
+spring.jba.hibernate.ddl-auto=update
+
+spring.jba.propertices.hibernate.format_sql=true
+

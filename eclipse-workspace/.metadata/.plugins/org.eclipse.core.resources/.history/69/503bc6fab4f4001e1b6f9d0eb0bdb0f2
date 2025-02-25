@@ -1,0 +1,49 @@
+package com.loop;
+
+public class Students {
+
+	String name;
+	
+	int id;
+	
+	
+	public Students(String name, int id) {
+		
+				this.name=name;
+				
+				this.id=id;
+		
+		
+	}
+
+
+	public static void main(String[] args) {
+		
+		Students s=new Students("Tamil",101);
+		
+		Students k=s;
+		
+		System.out.println("The student name"+s.name+" "+s.id);
+		
+		System.out.println(k);
+		
+		
+		System.out.println(s);
+		
+		
+		
+		k=null;
+		
+
+        System.out.println(k);
+		
+		
+		System.out.println(s);
+
+		
+		
+		
+
+	}
+
+}

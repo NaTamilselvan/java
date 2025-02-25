@@ -1,0 +1,62 @@
+package com.example.onlinebooks;
+
+public class Books_pojo {
+	
+	
+Integer book_no;
+	
+	String  book_name;
+	
+	Integer book_prise;
+	
+	String  Author_name;
+	
+	Integer publication_year;
+
+	public Integer getBook_no() {
+		return book_no;
+	}
+
+	public void setBook_no(Integer book_no) {
+		this.book_no = book_no;
+	}
+
+	public String getBook_name() {
+		return book_name;
+	}
+
+	public void setBook_name(String book_name) {
+		this.book_name = book_name;
+	}
+
+	public Integer getBook_prise() {
+		return book_prise;
+	}
+
+	public void setBook_prise(Integer book_prise) {
+		this.book_prise = book_prise;
+	}
+
+	public String getAuthor_name() {
+		return Author_name;
+	}
+
+	public void setAuthor_name(String author_name) {
+		Author_name = author_name;
+	}
+
+	public Integer getPublication_year() {
+		return publication_year;
+	}
+
+	public void setPublication_year(Integer publication_year) {
+		this.publication_year = publication_year;
+	}
+
+	@Override
+	public String toString() {
+		return "Books_pojo [book_no=" + book_no + ", book_name=" + book_name + ", book_prise=" + book_prise
+				+ ", Author_name=" + Author_name + ", publication_year=" + publication_year + "]";
+	}
+	
+}

@@ -1,0 +1,61 @@
+package com.example.onlinebooks;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+//import org.springframework.stereotype.Service;
+
+import com.example.StudentSpringBoot.StudentEntity;
+
+@Service
+public class Books_Services implements   Books_Interface{
+
+	
+	@Autowired
+	Books_repository repo;
+	
+	@Override
+	public String Vanakam() {
+		
+		return "welcome to Books_Store";
+	}
+
+	@Override
+	public String insert(Books_pojo pojo) {
+		
+		Books_entity b_entity=new  Books_entity(); 
+		
+		
+		
+		              b_entity.setBook_no(  pojo.getBook_no());
+		              
+		              b_entity.setBook_name(pojo.getBook_name());
+		              
+		              b_entity.setAuthor_name(pojo.getAuthor_name());
+		              
+		              b_entity.setBook_prise(pojo.getBook_prise());
+		              
+		              b_entity.setPublication_year(pojo.getPublication_year());;
+		              
+		              repo.save(b_entity);
+		              
+		              
+		
+		return "sucessfully inserted";
+	}
+
+	public String delete(int id) {
+		
+		Optional<Books_entity> obj = repo.findById(id);
+		
+		if(obj.isEmpty()) {
+			throw new RuntimeException("book not found");
+			
+		}
+		repo.delete(obj.get());
+		
+		return "deleted sucessfully";
+	}
+
+}

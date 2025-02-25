@@ -1,0 +1,167 @@
+package Ds;
+
+import java.util.Arrays;
+
+public class Moveallzerotoend {
+
+	
+	public static int[] reverseArray(int[] arr) {
+
+
+		int zeros=0;
+		
+		for(int i=0;i<arr.length-1;i++) {
+			
+			if(arr[i]==0 ) {
+				
+				if (arr[i+1]!=0) {
+					
+					int swap=arr[i+1];
+					
+					arr[i]=swap;
+					
+					arr[i+1]=0;
+				}
+			}
+			
+			
+			
+			
+			
+		}
+		
+		for(int k=0;k<arr.length;k++) {
+			
+			System.out.print(arr[k]+" ");
+			
+		}
+		
+		
+		return null;
+	}
+	
+	public static void reverseArray2(int[] arr) {
+		
+		
+		Arrays.sort(arr);
+		
+		
+		int[] arr2=new int[arr.length];
+		
+		
+		for(int i=0,j=arr.length-1;i<arr.length;i++,j--) {
+			
+			arr2[i]=arr[j];
+			
+		}
+		
+		for(int i=0;i<arr.length;i++) {
+			System.out.println(arr2[i]);
+		}
+		
+		
+	}
+
+	
+	public static void reverseArray3(int[] arr,int zero){
+
+		
+		
+		int arr2[]=new int[arr.length];
+		
+		
+		
+		for(int i=0,j=0;i<arr.length;i++) {
+			
+			if(arr[i]!=0) {
+				
+//				System.out.println("a[i] is"+arr[i]);
+				
+				arr2[j]=arr[i];
+//				System.out.println("arr[j] is "+j+"postion is "+arr2[j]);
+				j++;
+//				System.out.println("arr[j] is "+j +"postion is "+arr2[j]);
+				
+			}
+			
+		}
+		
+		for(int k=0;k<arr2.length;k++) {
+			System.out.print(arr2[k]+" ");
+		}
+		
+		
+		
+	}
+
+	public static void reverseArray4(int[] arr,int zerp){
+		
+		
+		for(int i=0;i<arr.length-1;i++) {
+			
+			if(arr[i]==0 && arr[i+1]!=0) {
+				
+				int swap=arr[i+1];
+				
+				arr[i]=swap;
+				
+				arr[i+1]=0;
+				
+				
+			}
+			else if(arr[i]==0 && arr[i+1]==0){
+				
+				if(i<arr.length-1) {
+					
+					i=i+2;
+				}
+				
+			}
+			
+		}
+		
+		for(int i=0;i<arr.length;i++) {
+			
+			System.out.println(arr[i]);
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		int[] arr= {10,20,0,8,0,3,2,0,1,8,32,0};
+		
+		int  ptr1 =0, ptr2 = 0, n=arr.length;
+		
+		while(ptr2<n) {
+			
+			if(arr[ptr2]!=0) {
+				
+				int swap=arr[ptr2];
+				
+				arr[ptr2]=arr[ptr1];
+				
+				arr[ptr1]=swap;
+				ptr1++;
+				
+		
+				
+			}
+			ptr2++;
+		}
+		
+		
+		for(int i=0;i<arr.length;i++){
+			
+			System.out.print(arr[i]+" ");
+		}
+		
+		
+		
+
+		
+			
+		
+		
+	}
+}

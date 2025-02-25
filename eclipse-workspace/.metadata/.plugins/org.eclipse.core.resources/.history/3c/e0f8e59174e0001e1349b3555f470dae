@@ -1,0 +1,19 @@
+package maps;
+
+import java.util.HashMap;
+
+public class First_map {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		  HashMap hash=new HashMap();
+		  hash.put("Dosai", 25);
+		  hash.put("parrota", 12);
+		  hash.put("idely",8);
+		  System.out.println(hash);
+		  
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package com.example.demo;
+
+import org.springframework.context.annotation.Configuration;
+
+
+
+public interface ServiceInterface {
+	
+	public   String insertcourse( Courses crs);
+	
+	public String tocheck();
+	
+	public String prime(int a);
+	
+	public String deletedsssscourse(int id);
+	
+	
+	public String palindrome(String name);
+	
+	
+	public String neon(int a);
+	
+	
+	
+	
+	
+	
+
+}

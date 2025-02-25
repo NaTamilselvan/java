@@ -1,0 +1,10 @@
+package com.example.onlinebooks;
+
+public interface Books_Interface {
+	
+	
+	public String Vanakam();
+
+	public String insert(Books_pojo pojo);
+
+}

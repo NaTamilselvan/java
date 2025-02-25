@@ -1,0 +1,20 @@
+package StringDemo;
+
+public class Streingreveprogram {
+	
+	public static void main(String[] args) {
+		
+		
+		String n="java program";
+		
+		char[] arr=n.toCharArray();
+		
+		
+		for(int i=arr.length;i>=0;i--) {
+			
+			System.out.print(arr[i]);
+			
+		}
+	}
+
+}

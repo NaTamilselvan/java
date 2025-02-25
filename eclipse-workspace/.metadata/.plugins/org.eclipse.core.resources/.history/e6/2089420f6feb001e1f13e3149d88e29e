@@ -1,0 +1,70 @@
+package com.example.onlinebooks;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class BooksController {
+	
+	
+	@Autowired
+	Books_Services book_services;
+	
+	
+	@RequestMapping("/vanakkam")
+	@ResponseBody
+	public String Vanakam() {
+		//System.out.println("Enter the controller nethod");
+		
+		return book_services.Vanakam();
+       
+		//return "vanakkam";
+	}
+	
+	
+	
+	@PostMapping("/insert")
+	@ResponseBody
+	public String insert(@RequestBody Books_pojo pojo) 
+	
+	{
+	
+		System.out.println(pojo);
+		return book_services.insert(pojo);
+	}
+	
+	@DeleteMapping("/Deletebook/{id}")
+	@ResponseBody
+	public String Delete_id( @PathVariable int id) {//@PathVariable int id
+		
+		return book_services.Delete_id(id);
+	}
+	
+	@GetMapping("/getAll")
+	@ResponseBody
+	public List<Books_pojo> getall(){
+		
+		return book_services.getAll();
+	}
+	
+	@PutMapping("/update")
+	@ResponseBody
+	public String update(@RequestParam int id,@RequestParam int new_prise) {
+
+		return book_services.update(id, new_prise) ;
+		
+	}
+	
+
+}

@@ -1,0 +1,21 @@
+package Collectionsmytry;
+
+import java.util.Set;
+
+import java.util.HashSet;
+
+public class RevString {
+
+	public static void main(String[] args) {
+		
+		
+		
+		String s="Hi how are you";
+		
+		 HashSet<String> hs=new HashSet<String>();
+		 
+		 System.out.println(hs.size());
+
+	}
+
+}

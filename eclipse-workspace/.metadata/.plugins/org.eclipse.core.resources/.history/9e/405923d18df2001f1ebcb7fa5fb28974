@@ -1,0 +1,34 @@
+package StringDemo;
+
+public class Palindrome {
+	
+	
+	public static void isPalindrome( String s ) {
+		
+		
+//		int i=0,j=s.length()-1;
+		
+
+		for(int i=0, j=s.length()-1;i<=j;i++,j--) {
+			
+			if (i==j) {
+				System.out.println("Palindrome");
+			}
+			else {
+				System.out.println("This not palimdrome");
+			}
+		}
+		
+	}
+	
+
+	public static void main(String[] args) {
+		
+	String	s="tamilselvan";
+		
+	isPalindrome(s);
+
+	
+	}
+
+}

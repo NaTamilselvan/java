@@ -1,0 +1,68 @@
+package StringDemo;
+
+public class CreateString {
+
+	public static void main(String[] args) {
+		
+		
+		
+		//String is a sequence of character .String is handled text type of data 
+		//compare to other language in java is difference String is Object.
+		//String is immutable data.
+		
+		
+		String name , name2 ,name3;
+		
+		//in python name,name2,name3="Tamil",'selvan',''' Tamilselvan''';
+		
+		//in c language no ;
+		
+		
+		
+		name="Tamilselvan";
+		
+		name2="Tamil"+"selvan";
+		
+		String name4=new String("Tamilselvan");
+		
+		String name5="Tamil";
+		
+		String name6=name.concat(name5);
+		
+		if(name==name2) {
+			System.out.println("The refernce are equal");
+		}
+		else {
+			System.out.println("The refernce are not equal");
+		}
+		
+		
+		System.out.println("The Secound convertion");
+		
+		
+
+		
+		if(name==name4) {
+			
+			System.out.println("The refernce are equal");
+		}
+		else {
+			System.out.println("The refernce are not equal");
+		}
+		
+		
+		
+		//why java String code not reference is equal.
+		
+		//which method you object is create by using new keyword or without object create 
+		
+		
+		System.out.println(name.hashCode());
+		
+		System.out.println(name4.hashCode());
+		
+		
+
+	}
+
+}

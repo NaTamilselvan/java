@@ -1,0 +1,16 @@
+package com.example.onlinebooks;
+
+import java.util.List;
+
+public interface Books_Interface {
+	
+	
+	public String Vanakam();
+
+	public String insert(Books_pojo pojo);
+	
+	public String Delete_id(int id);
+	
+	public List<Books_pojo> getAll();
+
+}

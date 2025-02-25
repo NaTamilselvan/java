@@ -1,0 +1,113 @@
+package com.example.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class Service2 {
+	
+	
+	@Autowired
+	  private   CourseRespository  repo;
+
+	public String welcome(String name) {
+		
+		String s="welcome to springboot world "+name;
+		
+		return s;
+	}
+
+	public String tocheck() {
+		// TODO Auto-generated method stub
+		return "hi all";
+	}
+
+	public int AddArray(int[] a) {
+		// TODO Auto-generated method stub
+	
+		int sum=0;
+		for(int i=0;i<a.length;i++) {
+			sum+=a[i];
+		}
+	           	
+		return sum;
+	}
+
+	public String prime(int a) {
+		// TODO Auto-generated method stub
+		//business logic Area
+		System.out.println("Enter the  prime");
+		boolean k=true;
+		
+		int i=2;
+		
+		while(a>i) {
+			if(a%i==0) {
+				k=false;
+				break;
+			}
+			i++;
+			
+		}
+		
+		
+		
+		
+		System.out.println("outer loop");
+		
+		//return "true";
+		return (k==true)?"prime":"not-prime" ;
+	}
+
+	public String neon(int a) {
+		// TODO Auto-generated method stub
+		
+		int b=a*a;
+		int sum=0;
+		
+		
+		while(b>0) {
+			
+			sum+=b%10;
+			
+			b=b/10;
+			
+		}
+		
+		
+		return (a==sum)?"neon number":"not-neon number";
+	}
+
+	public String palindrome(String name) {
+		// TODO Auto-generated method stub
+		
+		String rev="";
+		
+		for(int i=name.length()-1;i>=0;i--) {
+			
+			rev=rev+name.charAt(i);
+		}
+		
+		
+		return (rev.equals(name))?"Palindrome":"not poindrome";
+	}
+
+
+
+
+
+	
+
+	public  String insertcourse(courses crs) {
+		
+		//crs.getName();
+	      
+	    repo.save(crs);
+		
+		return "success";
+	}
+
+	
+
+
+}

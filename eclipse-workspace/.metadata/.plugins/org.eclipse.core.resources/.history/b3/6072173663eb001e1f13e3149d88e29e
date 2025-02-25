@@ -1,0 +1,68 @@
+package com.example.onlinebooks;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Books")
+public class Books_entity{
+	
+	@Id
+	Integer book_no;
+	
+	String  book_name;
+     
+	@Column(name="prise")
+	Integer book_prise;
+	
+	String  Author_name;
+	
+	Integer publication_year;
+
+	public Integer getBook_no() {
+		return book_no;
+	}
+
+	public void setBook_no(Integer book_no) {
+		this.book_no = book_no;
+	}
+
+	public String getBook_name() {
+		return book_name;
+	}
+
+	public void setBook_name(String book_name) {
+		this.book_name = book_name;
+	}
+
+	public Integer getBook_prise() {
+		return book_prise;
+	}
+
+	public void setBook_prise(Integer book_prise) {
+		this.book_prise = book_prise;
+	}
+
+	public String getAuthor_name() {
+		return Author_name;
+	}
+
+	public void setAuthor_name(String author_name) {
+		this.Author_name = author_name;
+	}
+
+	public Integer getPublication_year() {
+		return publication_year;
+	}
+
+	public void setPublication_year(Integer publication_year) {
+		this.publication_year = publication_year;
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,84 @@
+package l1;
+
+public class Acendingorder {
+
+	public static int[] accendingorder(int[] arr) {
+	
+		
+	for (int i=0;i<=arr.length-1;i++) {
+		
+	       for(int j=i+1;j<arr.length;j++) {
+	    	   
+	    	   if (arr[i]>arr[j]) {
+	    		   
+	    		   int temp=arr[i];
+	    		   
+	    		  arr[i] =arr[j];
+	    		  
+	    		  arr[j]=temp;
+	    		   
+	    	   }
+	       }
+	
+	  }
+	
+	return arr;
+	}
+	
+	
+	public static int[] decendingorder(int[] arr) {
+		
+		
+		for (int i=0;i<=arr.length-1;i++) {
+			
+		       for(int j=i+1;j<arr.length;j++) {
+		    	   
+		    	   if (arr[i]<arr[j]) {
+		    		   
+		    		   int temp=arr[i];
+		    		   
+		    		  arr[i] =arr[j];
+		    		  
+		    		  arr[j]=temp;
+		    		   
+		    	   }
+		       }
+		
+		  }
+		
+		return arr;
+		}
+		
+
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		int[] arr= {10,20,35,-5,-8,12,34,21,8,-9};
+		
+		
+		int[] arr2=accendingorder(arr);
+		
+		
+		for(int i=0;i<arr2.length;i++) {
+			
+			System.out.println(arr2[i]);
+		}
+		
+		int[] arr3=decendingorder(arr);
+		
+		
+		System.out.println("The decending order");
+
+		for(int i=0;i<arr2.length;i++) {
+			
+			System.out.println(arr3[i]);
+		}
+		
+		
+	}
+
+}

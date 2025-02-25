@@ -1,0 +1,28 @@
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		
+		
+		//why array if store more then one value use array why array concept is
+		//inveted because you store 20 students values how many varaible is
+		//created as a good devaloper use memeory efficent and that code use micro to mano
+		
+		/* variable creation limtations
+		 * 
+		 * 1. variable creation is difficult 
+		 * 2.remebering  the  multiple names and accessing them is difficult ./ 
+		 */
+		
+		//array decleartion 
+		//array creation
+		//array installiaztion
+		//arrray decleartion and array creation and array instailation in asingle line 
+		
+		int[] a;
+		
+		//when a array decleartion array not specify the size
+
+	}
+
+}
