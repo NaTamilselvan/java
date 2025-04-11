@@ -1,0 +1,70 @@
+package jaw;
+
+public class Sprial {
+
+	public static void main(String[] args) {
+		
+		
+		  int[][] arr=new int[4][4];
+		  
+		  
+		  int minCol=0,maxCol=arr[0].length-1;
+		  
+		  int minRow=0,maxRow=arr.length-1;
+		  
+		  int value=1;
+		  
+		  while(value<16) {
+			  
+			  
+			  for(int col=minCol;col<=maxCol;col++) {
+				  
+				  arr[minRow][col]=value;
+				  value++;
+			  }
+			  
+			  
+              for(int row=minRow+1;row<=maxRow;row++) {
+				  
+				  arr[row][maxCol]=value;
+				  value++;
+			  }
+			  
+			  
+              for(int col=maxCol;col>=minCol;col--) {
+				  
+				  arr[maxRow][col]=value;
+				  value++;
+			  }
+			  
+              for(int row=maxRow-1;row>minRow+1;row--) {
+				  
+				  arr[row][minCol]=value;
+				  value++;
+			  }
+              
+              minCol++;
+              maxCol--;
+              minRow++;
+              maxRow--;
+			  
+		  }
+		  
+		  
+		  for(int i=0;i<arr.length;i++) {
+			  
+			  for(int j=0;j<arr[0].length;j++) {
+				  System.out.print(arr[i][j]+" \t");
+			  }
+			  
+			  
+			  System.out.println();
+		  }
+		  
+		 
+		  
+		  
+
+	}
+
+}
